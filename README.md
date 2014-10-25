@@ -21,3 +21,5 @@ This repository contains **Dockerfile** of [Celery](http://www.celeryproject.org
 ### Usage
 
     docker run -it --rm elviento/celery
+
+### -wjf 
