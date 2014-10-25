@@ -9,9 +9,11 @@ FROM dockerfile/python
 
 # Install Celery.
 RUN pip install celery
+RUN pip install elasticsearch
 
 # Define working directory.
 WORKDIR /data
 
 # Define default command.
-CMD ["bash"]
+ADD ./run.sh /run.sh
+CMD ["/bin/bash","/run.sh"]
