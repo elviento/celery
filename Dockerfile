@@ -7,8 +7,10 @@
 # Pull base image.
 FROM dockerfile/python
 
-# Install Celery.
+# Install Celery
 RUN pip install celery
+
+# Install Elasticsearch
 RUN pip install elasticsearch
 
 # Define working directory.
