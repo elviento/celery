@@ -7,6 +7,10 @@
 # Pull base image.
 FROM dockerfile/python
 
+# Update and install pkgs
+RUN apt-get update && \
+  apt-get install -y htop
+
 # Install Celery
 RUN pip install celery
 
